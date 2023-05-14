@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "MIME Type Issue",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["src/content.js"],
+      "matches": ["https://www.google.com/*"],
+      "run_at": "document_end"
+    }
+  ]
+}
